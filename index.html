@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillSpark - Micro Learning Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>SkillSpark</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#lesson">Lesson</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Learn Targeted Skills Fast</h2>
+    <p>Excel • JavaScript • Resume Writing & more</p>
+    <a href="#skills" class="btn">Explore Skills</a>
+  </section>
+
+  <section id="skills">
+    <h2>Popular Skills</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>Excel Basics</h3>
+        <p>Learn formulas, functions, and data formatting.</p>
+        <button onclick="loadLesson('excel')">Start Lesson</button>
+      </div>
+      <div class="card">
+        <h3>JavaScript Fundamentals</h3>
+        <p>Variables, loops, functions, DOM manipulation.</p>
+        <button onclick="loadLesson('javascript')">Start Lesson</button>
+      </div>
+      <div class="card">
+        <h3>Resume Writing</h3>
+        <p>Craft a job-winning resume with best practices.</p>
+        <button onclick="loadLesson('resume')">Start Lesson</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="lesson">
+    <h2>Lesson Viewer</h2>
+    <div id="lessonContent">
+      <p>Select a skill to start learning.</p>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <h2>Quick Quiz</h2>
+    <div id="quizContainer">
+      <p>Take the quiz after your lesson to earn a certificate.</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <div id="quizContent"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SkillSpark. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
